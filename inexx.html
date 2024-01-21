@@ -15,18 +15,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
-        }
-    </script>
+    <!-- custom css -->
     <style>
+        .primary-color {
+            background-color: #B68C5A;
+        }
+
         .garamond {
             font-family: 'EB Garamond', serif;
         }
@@ -38,7 +32,137 @@
 </head>
 
 <body>
+    <!-- header start -->
+    <header class="max-w-[1440px] mx-auto lg:px-20">
+        <nav class="poppins py-5">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Cases</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-xl cursor-pointer"><img src="asstes/images/logo2.png" alt=""></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 items-center">
+                        <li><a>Home</a> </li>
+                        <li><a>Services</a></li><img class="w-[24px] h-[24px]" src="asstes/images/Frame1.png" alt="">
+                        <li><a>Cases</a></li><img class="w-[24px] h-[24px]" src="asstes/images/Frame1.png" alt="">
+                        <li><a>Blog</a></li><img class="w-[24px] h-[24px]" src="asstes/images/Frame1.png" alt="">
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn primary-color text-xs md:text-lg md:font-semibold text-white hover:text-black">Free
+                        Consultation</a>
+                </div>
+            </div>
+        </nav>
+        <div class="banner">
+            <div class="hero py-24 lg:px-32" style="background-image: url('asstes/images/banner.png');">
+                <div class=""></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="">
+                        <h1 class="mb-5 text-5xl font-bold garamond text-white">We Provide Effective <br> Legal
+                            Solutions</h1>
+                        <p class="mb-5 poppins font-normal">There are many variations of passages of Lorem Ipsum
+                            available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <div class="flex flex-col md:flex-row justify-center gap-3">
+                            <input class="input" type="text" placeholder="Search your services">
+                            <button
+                                class="btn px-10 primary-color border-none text-lg font-semibold text-white hover:text-black">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
 
+    <!-- main start -->
+    <main class="max-w-[1440px] mx-auto lg:px-20">
+
+        <!-- The Legal Practice Area start -->
+        <section class="py-[120px]">
+            <div class="text-center space-y-6 mb-10">
+                <h1 class="garamond text-[40px] font-extrabold text-[#414040]">The Legal Practice Area</h1>
+                <p class="poppins max-w-[50%] mx-auto text-[#707070] text-base font-normal">There are many variations of
+                    passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
+                    injected humour.</p>
+            </div>
+            <div class="grid lg:grid-cols-3">
+
+                <div class="flex flex-col items-center justify-center gap-6 text-center py-12 px-5 border-r border-b border-[#E7E7E7]">
+                    <img src="asstes/images/business.png" alt="">
+                    <h4 class="text-3xl font-extrabold text-[#414040]">Business Law</h4>
+                    <p class="text-[#707070] text-base font-normal">There are many variations of passages of Lorem Ipsum
+                        available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <img class="cursor-pointer" src="asstes/images/Frame.png" alt="">
+                </div>
+
+                <div class="flex flex-col items-center justify-center gap-6 text-center py-12 px-5 bg-gradient-to-r from-[#F3F3F3] to-[#F3F3F3] border-r border-b border-[#E7E7E7]">
+                    <img src="asstes/images/criminal.png" alt="">
+                    <h4 class="text-3xl font-extrabold text-[#414040]">Criminal Law</h4>
+                    <p class="text-[#707070] text-base font-normal">There are many variations of passages of Lorem Ipsum
+                        available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <img class="cursor-pointer" src="asstes/images/Frame.png" alt="">
+                </div>
+
+                <div class="flex flex-col items-center justify-center gap-6 text-center py-12 px-5 border-l border-b border-[#E7E7E7]">
+                    <img src="asstes/images/child.png" alt="">
+                    <h4 class="text-3xl font-extrabold text-[#414040]">Child Support</h4>
+                    <p class="text-[#707070] text-base font-normal">There are many variations of passages of Lorem Ipsum
+                        available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <img class="cursor-pointer" src="asstes/images/Frame.png" alt="">
+                </div>
+
+                <div class="flex flex-col items-center justify-center gap-6 text-center py-12 px-5 border-t border-r border-[#E7E7E7]">
+                    <img src="asstes/images/education.png" alt="">
+                    <h4 class="text-3xl font-extrabold text-[#414040]">Education Law</h4>
+                    <p class="text-[#707070] text-base font-normal">There are many variations of passages of Lorem Ipsum
+                        available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <img class="cursor-pointer" src="asstes/images/Frame.png" alt="">
+                </div>
+
+                <div class="flex flex-col items-center justify-center gap-6 text-center py-12 px-5 border-t border-r border-l border-[#E7E7E7]">
+                    <img src="asstes/images/divorce.png" alt="">
+                    <h4 class="text-3xl font-extrabold text-[#414040]">Divorce Law</h4>
+                    <p class="text-[#707070] text-base font-normal">There are many variations of passages of Lorem Ipsum
+                        available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <img class="cursor-pointer" src="asstes/images/Frame.png" alt="">
+                </div>
+
+                <div class="flex flex-col items-center justify-center gap-6 text-center py-12 px-5 border-t border-l border-[#E7E7E7]">
+                    <img src="asstes/images/tax.png" alt="">
+                    <h4 class="text-3xl font-extrabold text-[#414040]">Tax Law</h4>
+                    <p class="text-[#707070] text-base font-normal">There are many variations of passages of Lorem Ipsum
+                        available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <img class="cursor-pointer" src="asstes/images/Frame.png" alt="">
+                </div>
+
+            </div>
+        </section>
+        <!-- The Legal Practice Area end -->
+
+    </main>
+    <!-- main end -->
+
+    <footer>
+
+    </footer>
 </body>
 
 </html>
